@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sign_up_app/Login.dart';
-import 'package:sign_up_app/Sign_Up.dart';
+import 'package:sign_up_app/login.dart';
+import 'package:sign_up_app/sign_up.dart';
 import 'package:sign_up_app/splash_screen.dart';
 
 void main() {
