@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sign_up_app/Login.dart';
+import 'package:sign_up_app/login.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
+  static const String id = "/splash";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,9 +94,9 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(
+                Navigator.pushNamed(
                   context,
-                  MaterialPageRoute(builder: (context) => const Login()),
+                  Login.id,
                 );
               },
               child:  Text(

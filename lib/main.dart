@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sign_up_app/Splash%20Screen.dart';
+import 'package:sign_up_app/Login.dart';
+import 'package:sign_up_app/Sign_Up.dart';
+import 'package:sign_up_app/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: SplashScreen(),
+      initialRoute: SplashScreen.id,
       debugShowCheckedModeBanner: false,
+      routes: {
+        SplashScreen.id: (context) => SplashScreen(),
+        Login.id: (context) => Login(),
+        SignUp.id: (context) => SignUp(),
+      },
     );
   }
 }

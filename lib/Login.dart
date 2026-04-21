@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sign_up_app/Sign_Up.dart';
+import 'package:sign_up_app/sign_up.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
-
+  static const String id = "/login";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -204,11 +204,9 @@ class Login extends StatelessWidget {
                         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       ),
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushNamed(
                           context,
-                          MaterialPageRoute(
-                            builder: (context) => const SignUp(),
-                          ),
+                          SignUp.id,
                         );
                       },
                       child: Text(
